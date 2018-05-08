@@ -7,33 +7,36 @@
 </ion-header>
 
 <ion-content class="card-background-page">
+  <ion-item *ngFor="let item of items | async">
+    {{item | json}}
+  </ion-item>
 
   <ion-card>
-    <img src="assets/imgs/logo.png"/>
+    <img src="/assets/imgs/basketball.webp"/>
     <div class="card-title">Basketball</div>
     <div class="card-subtitle">41 Listings</div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/imgs/soccer.webp"/>
+    <img src="./assets/imgs/soccer.webp"/>
     <div class="card-title">Soccer</div>
     <div class="card-subtitle">64 Listings</div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/imgs/football.webp"/>
+    <img src="./assets/imgs/football.webp"/>
     <div class="card-title">Football</div>
     <div class="card-subtitle">64 Listings</div>
   </ion-card>
   
   <ion-card>
-    <img src="assets/imgs/tabletennis.webp"/>
+    <img src="./assets/imgs/tabletennis.webp"/>
     <div class="card-title">Table Tennis</div>
     <div class="card-subtitle">64 Listings</div>
   </ion-card>
 
   <ion-card>
-    <img src="assets/imgs/tennis.webp"/>
+    <img src="./assets/imgs/tennis.webp"/>
     <div class="card-title">Tennis</div>
     <div class="card-subtitle">64 Listings</div>
   </ion-card>
