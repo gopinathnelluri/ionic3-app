@@ -18,6 +18,7 @@ import { SettingsPageModule } from "../pages/settings/settings.module";
 import { TabsPageModule } from "../pages/tabs/tabs.module";
 import { HomePageModule } from "../pages/home/home.module";
 import { FirebaseService } from '../providers/firebase-service';
+import { SportPageModule } from "../pages/sport/sport.module";
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { FirebaseService } from '../providers/firebase-service';
     HttpModule,
     TabsPageModule,
     HomePageModule,
+    SportPageModule,
     SettingsPageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),
@@ -44,7 +46,6 @@ import { FirebaseService } from '../providers/firebase-service';
   providers: [
     StatusBar,
     SplashScreen,
-    FirebaseService,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

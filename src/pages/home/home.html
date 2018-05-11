@@ -7,13 +7,41 @@
 </ion-header>
 
 <ion-content class="card-background-page">
-  <ion-item *ngFor="let item of items | async">
-    {{item | json}}
-  </ion-item>
 
-  <ion-card>
-    <img src="/assets/imgs/basketball.webp"/>
-    <div class="card-title">Basketball</div>
+  <ion-card *ngFor="let item of items | async" (click)="navigateToSport($event,item)">
+
+      <ion-item >
+        <ion-icon name="{{item.icon}}" item-left large ></ion-icon>
+        <h2>{{item.name}}</h2>
+      </ion-item>
+<!--
+      <ion-row>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="thumbs-up"></ion-icon>
+            <div>12 Likes</div>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-button icon-left clear small>
+            <ion-icon name="text"></ion-icon>
+            <div>4 Comments</div>
+          </button>
+        </ion-col>
+        <ion-col center text-center>
+          <ion-note>
+            11h ago
+          </ion-note>
+        </ion-col>
+      </ion-row>
+-->
+    </ion-card>
+  <!--
+  <ion-card *ngFor="let item of items | async">
+  
+    <img src="/assets/imgs/{{item.path}}.webp"/>
+
+    <div class="card-title">{{item.name | json}}</div>
     <div class="card-subtitle">41 Listings</div>
   </ion-card>
 
@@ -40,5 +68,5 @@
     <div class="card-title">Tennis</div>
     <div class="card-subtitle">64 Listings</div>
   </ion-card>
-
+-->
 </ion-content>
