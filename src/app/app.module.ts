@@ -17,8 +17,8 @@ import { SettingsPage } from "../pages/settings/settings";
 import { SettingsPageModule } from "../pages/settings/settings.module";
 import { TabsPageModule } from "../pages/tabs/tabs.module";
 import { HomePageModule } from "../pages/home/home.module";
-import { FirebaseService } from '../providers/firebase-service';
 import { SportPageModule } from "../pages/sport/sport.module";
+import { LocationPageModule } from "../pages/location/location.module";
 
 @NgModule({
   declarations: [
@@ -30,6 +30,7 @@ import { SportPageModule } from "../pages/sport/sport.module";
     TabsPageModule,
     HomePageModule,
     SportPageModule,
+    LocationPageModule,
     SettingsPageModule,
     IonicModule.forRoot(MyApp),
     AngularFireModule.initializeApp(firebaseConfig),

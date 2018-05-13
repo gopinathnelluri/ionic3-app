@@ -18,7 +18,6 @@ export class HomePage {
   }
 
   navigateToSport(event,item){
-    //alert(path);
     this.navCtrl.push(SportPage,{
       "sportItem" : item
     });

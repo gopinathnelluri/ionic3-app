@@ -13,9 +13,124 @@
 </ion-header>
 
 
-<ion-content padding>
-  {{sport | json}}
-  <div *ngIf="match | async">
-    {{match | json}}
+<ion-content class="card-background-page">
+  <div *ngIf="sportData">
+    <div *ngIf="sportData.match">   
+        <ion-card>
+            <ion-card-header color="primary">
+                Live Score
+            </ion-card-header>
+
+            <ion-list>
+              <ion-item text-center>
+                    <ion-row class="team-score-row">
+                        <ion-col col-6>
+                            {{sportData.match[0].score}}
+                        </ion-col>
+                        <ion-col col-6>
+                            {{sportData.match[1].score}}
+                        </ion-col>
+                    </ion-row>
+
+                    <ion-row class="team-name-row">
+                        <ion-col col-6>
+                            {{sportData.match[0].team}}
+                        </ion-col>
+                        <ion-col col-6>
+                            {{sportData.match[1].team}}
+                        </ion-col>
+                    </ion-row>
+                    <p class="match-date">
+                      {{sportData.match.date | date:'fullDate'}}
+                    </p>
+                </ion-item>
+              </ion-list>
+        </ion-card>
+    </div>
+    <div *ngIf="sportData.schedule">   
+        <ion-card >
+            <ion-card-header color="primary" text-uppercase>
+              Schedule
+            </ion-card-header>
+
+            <ion-list>
+                <ion-item>
+                      <ion-card  *ngFor="let scheduleItem of sportData.schedule;let i = index" >
+                          <ion-item>
+                                <ion-icon name="time" item-start large></ion-icon>
+                                <h3>{{scheduleItem.date | date:'fullDate'}}</h3>
+                                <p>{{scheduleItem.time}}</p>
+                          </ion-item>
+
+                          <ion-item (click)="cardClicked($event,i)">
+                              <ion-icon name="navigate" item-left large ></ion-icon>
+                              <h3>{{scheduleItem.location.address}}</h3>
+                              <p>{{scheduleItem.location.city}}, {{scheduleItem.location.state}} {{scheduleItem.location.zip}}</p>
+                          </ion-item>
+                          
+                        <!--
+                          <ion-item>
+                            <span item-left>18 min</span>
+                            <span item-left>(2.6 mi)</span>
+                            <button ion-button icon-left clear item-end>
+                              <ion-icon name="navigate"></ion-icon>
+                              Start
+                            </button>
+                          </ion-item>
+                        -->
+                      </ion-card>
+                </ion-item>
+              
+              
+              <!--
+              <button ion-item>
+                <ion-icon name="cart" item-start></ion-icon>
+                Shopping
+              </button>
+
+              <button ion-item>
+                <ion-icon name="medical" item-start></ion-icon>
+                Hospital
+              </button>
+
+              <button ion-item>
+                <ion-icon name="cafe" item-start></ion-icon>
+                Cafe
+              </button>
+
+              <button ion-item>
+                <ion-icon name="paw" item-start></ion-icon>
+                Dog Park
+              </button>
+
+              <button ion-item>
+                <ion-icon name="beer" item-start></ion-icon>
+                Pub
+              </button>
+
+              <button ion-item>
+                <ion-icon name="planet" item-start></ion-icon>
+                Space
+              </button>
+              -->
+
+            </ion-list>
+          </ion-card>
+
+    </div>
+
   </div>
 </ion-content>
+
+
+<!--
+<ion-content class="card-background-page">
+  <ion-card *ngFor="let item of match | async" (click)="navigateToSport($event,item)">
+      <ion-item >
+        <ion-icon name="{{item.icon}}" item-left large ></ion-icon>
+        <h2>{{item.name}}</h2>
+      </ion-item>
+    </ion-card>
+</ion-content>
+
+-->
