@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, Platform } from 'ionic-angular';
 import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
-import { icons } from './icons';
-import { InAppBrowser } from '@ionic-native/in-app-browser';
+import { icons } from '../../providers/icons';
+//import { InAppBrowser } from '@ionic-native/in-app-browser';
 
 /**
  * Generated class for the LocationPage page.
@@ -15,7 +15,7 @@ import { InAppBrowser } from '@ionic-native/in-app-browser';
 @Component({
   selector: 'page-location',
   templateUrl: 'location.html',
-  providers: [LaunchNavigator, InAppBrowser]
+  providers: [LaunchNavigator]
 })
 export class LocationPage {
 
@@ -29,8 +29,9 @@ export class LocationPage {
   constructor(public navCtrl: NavController, 
               public navParams: NavParams, 
               private launchNavigator: LaunchNavigator,
-              private platform: Platform,
-              private iab: InAppBrowser) {
+              private platform: Platform
+              //private iab: InAppBrowser
+              ) {
       this.customIcons = icons;
       this.sport = navParams.get('sportItem');
       this.location = navParams.get('location');
