@@ -19,6 +19,8 @@ import { TabsPageModule } from "../pages/tabs/tabs.module";
 import { HomePageModule } from "../pages/home/home.module";
 import { SportPageModule } from "../pages/sport/sport.module";
 import { LocationPageModule } from "../pages/location/location.module";
+import { Push } from "@ionic-native/push";
+import { FirebaseService } from "../providers/firebase-service";
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { LocationPageModule } from "../pages/location/location.module";
   providers: [
     StatusBar,
     SplashScreen,
+    FirebaseService,
+    Push,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

@@ -13,8 +13,7 @@ import { LocationPage } from "../location/location";
 @IonicPage()
 @Component({
   selector: 'page-sport',
-  templateUrl: 'sport.html',
-  providers: [FirebaseService]
+  templateUrl: 'sport.html'
 })
 export class SportPage {
   sport: any;

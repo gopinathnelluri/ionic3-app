@@ -7,8 +7,7 @@ import { TabsPage } from '../pages/tabs/tabs';
 import { Push, PushObject, PushOptions } from '@ionic-native/push';
 
 @Component({
-  templateUrl: 'app.html',
-  providers: [Push]
+  templateUrl: 'app.html'
 })
 export class MyApp {
   rootPage:any = TabsPage;

@@ -8,8 +8,7 @@ import { icons } from '../../providers/icons';
 
 @Component({
   selector: 'page-home',
-  templateUrl: 'home.html',
-  providers: [FirebaseService]
+  templateUrl: 'home.html'
 })
 export class HomePage {
 
