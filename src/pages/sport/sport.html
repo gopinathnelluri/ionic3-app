@@ -7,13 +7,15 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{sport.name}}</ion-title>
+    <ion-title>{{this.gender=='male'?'Men':'Women'}}'s {{sport.name}}</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 
 <ion-content class="card-background-page">
+  <div class="breadcrumb" *ngIf="showBreadCrumb">
+      {{this.gender=='male'?'Men':'Women'}} > {{sport.name}} > {{categoryDetails.title}}
+  </div>
   <div *ngIf="sportData">
     <div *ngIf="sportData.match">   
         <ion-card>
@@ -56,18 +58,46 @@
             <ion-list>
                 <ion-item>
                       <ion-card  *ngFor="let scheduleItem of sportData.schedule;let i = index" >
+                        <ion-list no-border>  
+                          <ion-item>
+                            <h2>Home Team</h2>
+                            <ion-note item-end>
+                                <h2>{{scheduleItem.teams.home}}</h2>
+                            </ion-note>
+                          </ion-item>
+                          <ion-item>
+                            <h2>Guest Team</h2>
+                            <ion-note item-end>
+                                <h2>{{scheduleItem.teams.guest}}</h2>
+                            </ion-note>
+                          </ion-item>
+                          <ion-item>
+                            <h2>Level</h2>
+                            <ion-note item-end>
+                                <h2>{{scheduleItem.level}}</h2>
+                            </ion-note>
+                          </ion-item>
+                          <ion-item>
+                            <h2>Status</h2>
+                            <ion-note item-end>
+                                <h2>{{scheduleItem.status}}</h2>
+                            </ion-note>
+                          </ion-item>
+                        </ion-list>  
+                        <ion-list no-border>  
                           <ion-item>
                                 <ion-icon name="time" item-start large></ion-icon>
                                 <h3>{{scheduleItem.date | date:'fullDate'}}</h3>
                                 <p>{{scheduleItem.time}}</p>
                           </ion-item>
-
+                        </ion-list>
+                        <ion-list no-border>  
                           <ion-item (click)="cardClicked($event,i)">
                               <ion-icon name="navigate" item-left large ></ion-icon>
                               <h3>{{scheduleItem.location.address}}</h3>
                               <p>{{scheduleItem.location.city}}, {{scheduleItem.location.state}} {{scheduleItem.location.zip}}</p>
                           </ion-item>
-                          
+                        </ion-list>  
                         <!--
                           <ion-item>
                             <span item-left>18 min</span>

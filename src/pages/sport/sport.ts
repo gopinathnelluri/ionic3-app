@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { FirebaseService } from "../../providers/firebase-service";
 import { LocationPage } from "../location/location";
+import { categories } from '../../providers/categories';
 
 /**
  * Generated class for the SportPage page.
@@ -16,16 +17,25 @@ import { LocationPage } from "../location/location";
   templateUrl: 'sport.html'
 })
 export class SportPage {
+  category: any;
+  categoryDetails: any;
   sport: any;
+  gender: any;
   sportData: any;
   sportObject: any;
+  showBreadCrumb: any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private firebaseService: FirebaseService) {
     this.sport = navParams.get('sportItem');
-    this.sportObject = this.firebaseService.get('sports/'+this.sport.path).valueChanges();
+    this.category = navParams.get('category');
+    this.gender = navParams.get('gender');
+    this.categoryDetails = categories[this.category];
+    console.log(this.categoryDetails)
+
+    this.sportObject = this.firebaseService.get(this.gender+ '/sports/'+this.sport.path+"/"+this.category).valueChanges();
     
     this.sportObject.subscribe((data) => {
-      console.log(data)
+      console.log("cat:",data)
       if(data && data[0]){
         this.sportData = data[0];
       }
@@ -33,6 +43,7 @@ export class SportPage {
   }
 
   ionViewDidLoad() {
+    
     console.log('ionViewDidLoad SportPage');
   }
 
@@ -43,5 +54,13 @@ export class SportPage {
         "sportItem" : this.sport,
         "location":  this.sportData.schedule[i].location
       });
+  }
+
+  ionViewDidEnter(){
+    this.showBreadCrumb = true;
+  }
+
+  ionViewWillLeave(){
+    this.showBreadCrumb = false;
   }
 }
