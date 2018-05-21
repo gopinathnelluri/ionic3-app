@@ -97,4 +97,7 @@
     </plugin>
     <engine name="ios" spec="~4.5.4" />
     <engine name="android" spec="~7.1.0" />
+    <plugin name="cordova-plugin-calendar" spec="^5.1.0">
+        <variable name="CALENDAR_USAGE_DESCRIPTION" value=" " />
+    </plugin>
 </widget>

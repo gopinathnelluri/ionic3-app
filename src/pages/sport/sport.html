@@ -7,14 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{this.gender=='male'?'Men':'Women'}}'s {{sport.name}}</ion-title>
+    <ion-title>{{sport.name}}</ion-title>
   </ion-navbar>
 </ion-header>
 
 
 <ion-content class="card-background-page">
   <div class="breadcrumb" *ngIf="showBreadCrumb">
-      {{this.gender=='male'?'Men':'Women'}} > {{sport.name}} > {{categoryDetails.title}}
+      {{gender=='male'?'Men':'Women'}} > {{sport.name}} > {{categoryDetails.title}}
   </div>
   <div *ngIf="sportData">
     <div *ngIf="sportData.match">   
@@ -85,14 +85,14 @@
                           </ion-item>
                         </ion-list>  
                         <ion-list no-border>  
-                          <ion-item>
+                          <ion-item (click)="dateClicked($event,i)">
                                 <ion-icon name="time" item-start large></ion-icon>
                                 <h3>{{scheduleItem.date | date:'fullDate'}}</h3>
                                 <p>{{scheduleItem.time}}</p>
                           </ion-item>
                         </ion-list>
                         <ion-list no-border>  
-                          <ion-item (click)="cardClicked($event,i)">
+                          <ion-item (click)="addressClicked($event,i)">
                               <ion-icon name="navigate" item-left large ></ion-icon>
                               <h3>{{scheduleItem.location.address}}</h3>
                               <p>{{scheduleItem.location.city}}, {{scheduleItem.location.state}} {{scheduleItem.location.zip}}</p>

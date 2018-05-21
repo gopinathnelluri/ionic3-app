@@ -15,12 +15,17 @@
 
 <ion-content>
   <ion-list >
+      <ion-list-header>
+        Manage Permissions
+      </ion-list-header>
       <ion-item>
         <ion-icon color="primary" item-start name="navigate"></ion-icon>
-        <!--
-        <ion-icon color="danger" item-start="" name="plane" role="img" class="icon icon-ios icon-ios-danger ion-ios-plane item-icon" aria-label="plane"></ion-icon>
-        -->
         <ion-label>Location</ion-label>
+        <ion-toggle secondary (ionChange)='changePreference($event)'></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-icon color="primary" item-start name="calendar"></ion-icon>
+        <ion-label>Calendar</ion-label>
         <ion-toggle secondary (ionChange)='changePreference($event)'></ion-toggle>
       </ion-item>
       <ion-item>
