@@ -1,8 +1,8 @@
 {
-  "name": "app",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "name": "Tournament",
+  "version": "1.0.0",
+  "author": "Gopinath Nelluri",
+  "homepage": "http://gopinath.us",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
@@ -32,8 +32,8 @@
     "@ionic/pro": "1.0.20",
     "@ionic/storage": "2.1.3",
     "angularfire2": "^5.0.0-rc.4",
-    "cordova-android": "^7.1.0",
-    "cordova-ios": "^4.5.4",
+    "cordova-android": "7.0.0",
+    "cordova-ios": "4.5.4",
     "cordova-plugin-actionsheet": "^2.3.3",
     "cordova-plugin-calendar": "^5.1.0",
     "cordova-plugin-device": "^2.0.1",
@@ -49,7 +49,8 @@
     "hoek": "^4.2.1",
     "ionic-angular": "3.9.2",
     "ionicons": "3.0.0",
-    "phonegap-plugin-push": "git+https://github.com/phonegap/phonegap-plugin-push.git",
+    "phonegap-plugin-multidex": "^1.0.0",
+    "phonegap-plugin-push": "^2.2.3",
     "protobufjs": "^6.8.6",
     "randomatic": "^3.0.0",
     "rxjs": "5.5.8",
@@ -62,7 +63,7 @@
     "@ionic/app-scripts": "3.1.8",
     "typescript": "~2.6.2"
   },
-  "description": "An Ionic project",
+  "description": "An awesome Tournament app.",
   "cordova": {
     "plugins": {
       "cordova-plugin-splashscreen": {},
@@ -77,13 +78,11 @@
         "LOCATION_USAGE_DESCRIPTION": "This app requires access to your location for navigation purposes"
       },
       "cordova-plugin-inappbrowser": {},
-      "phonegap-plugin-push": {
-        "SENDER_ID": "71672070481",
-        "ANDROID_SUPPORT_V13_VERSION": "27.+",
-        "FCM_VERSION": "11.6.2"
-      },
       "cordova-plugin-calendar": {
         "CALENDAR_USAGE_DESCRIPTION": " "
+      },
+      "phonegap-plugin-push": {
+        "SENDER_ID": "71672070481"
       }
     },
     "platforms": [

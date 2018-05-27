@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "71672070481",
+    "firebase_url": "https://tournament-7e7ce.firebaseio.com",
+    "project_id": "tournament-7e7ce",
+    "storage_bucket": "tournament-7e7ce.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:71672070481:android:abe0837e5c7a9105",
+        "android_client_info": {
+          "package_name": "us.gopinath.tournament"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "71672070481-9i8j2mm10jeeifojks5qaq6pelp82ua2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHvOquuFZutmRK5JS1tIe6bBEN3BXOJ8w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
