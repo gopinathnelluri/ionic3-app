@@ -1,0 +1,500 @@
+   46  ionic monitoring syncmaps
+   47  ionic serve
+   48  ionic serve
+   49  
+   50  ionic serve
+   51  ionic serve
+   52  npm install
+   53  ionic serve
+   54  ionic serve
+   55  ionic serve --help
+   56  ionic serve --help -c
+   57  ionic serve -c
+   58  ionic serve -c
+   59  ionic serve -c
+   60  git add .
+   61  git commit -m "tesseract"
+   62  git puch
+   63  git push
+   64  ionic cordova plugin add cordova-sqlite-storage
+   65  npm install --save @ionic-native/sqlite
+   66  ionic serve -c
+   67  ionic serve -c
+   68  ionic serve -c
+   69  npm --save install barcode
+   70  ionic serve -c
+   71  ionic serve -c
+   72  ionic serve -c
+   73  npm --save uninstall barcode
+   74  ionic serve -c
+   75  npm --save install ngx-qrcode2
+   76  ionic serve -c
+   77  ionic serve -c
+   78  ionic serve -c
+   79  cd
+   80  cd portfolio
+   81  ls
+   82  firebase deploy
+   83  cal
+   84  firebase deploy
+   85  firebase deploy
+   86  cd ..
+   87  cd ionic
+   88  cd app
+   89  ls
+   90  ionic serve -c
+   91  ionic serve -c
+   92  ionic serve -c
+   93  ionic serve -c
+   94  ionic serve -c
+   95  ionic serve -c
+   96  ionic generate service firebase-service
+   97  ionic generate provider  firebase-service
+   98  ionic generate page sport
+   99  ionic serve -c
+  100  ionic serve -c
+  101  ionic serve -c
+  102  ionic serve -c
+  103  ionic serve -c
+  104  ionic serve -c
+  105  ionic serve -c
+  106  ionic serve -c
+  107  ionic serve -c
+  108  ionic serve -c
+  109  ionic serve -c
+  110  ionic serve -c
+  111  ionic serve -c
+  112  ionic serve -c
+  113  ionic serve -c
+  114  ionic serve -c
+  115  ionic serve -c
+  116  ionic serve -c
+  117  ionic serve -c
+  118  ionic serve -c
+  119  ionic serve -c
+  120  ionic serve -c
+  121  ionic serve -c
+  122  ionic serve -c
+  123  ionic serve -c
+  124  ionic serve -c
+  125  ionic serve -c
+  126  ionic serve -c
+  127  ionic serve -c
+  128  ionic serve -c
+  129  ionic serve -c
+  130  ionic serve -c
+  131  ionic serve -c
+  132  npm install
+  133  npm install hoek@4.2.1
+  134  ionic serve -c
+  135  npm install protobufjs
+  136  npm install tunnel-agent
+  137  npm install randomatic
+  138  ionic serve -c
+  139  ionic serve -c
+  140  ionic serve -c
+  141  git add .
+  142  git commit -m "v d0.2"
+  143  git push
+  144  ionic generate page location
+  145  ionic cordova plugin add uk.co.workingedge.phonegap.plugin.launchnavigator
+  146  npm install --save @ionic-native/launch-navigator
+  147  ionic cordova plugin add cordova-plugin-inappbrowser
+  148  npm install --save @ionic-native/in-app-browser
+  149  cd src/app/
+  150  ls
+  151  cd ..
+  152  clear
+  153  cd app/
+  154  ng generate component dishdetail
+  155  cd ionic/
+  156  cd app
+  157  ionic serve -c
+  158  ionic serve -c
+  159  ionic serve -c
+  160  ionic serve -c
+  161  ionic serve -c
+  162  ionic serve -c
+  163  ionic serve -c
+  164  ionic serve -c
+  165  ionic serve -c
+  166  ionic serve -c
+  167  ionic serve -c
+  168  ionic serve -c
+  169  git add .
+  170  git commit -m "poc v0.2"
+  171  git push
+  172  ionic cordova plugin add cordova-plugin-calendar
+  173  npm install --save @ionic-native/calendar
+  174  ionic serve -c
+  175  ionic cordova build ios --prod
+  176  cd ionic
+  177  open .
+  178  cd app
+  179  ionic serve -c
+  180  git add .
+  181  git commit -m "new sport page"
+  182  git push
+  183  ifconfig
+  184  git add .
+  185  git commit -m "maps launcher integration"
+  186  git push
+  187  git add .
+  188  git commit -m "hoek update"
+  189  git push
+  190  git add .
+  191  git commit  -m "protobufjs, tunnel-agent and randomatic update"
+  192  ionic cordova plugin add phonegap-plugin-push
+  193  npm install --save @ionic-native/push
+  194  ionic cordova plugin remove phonegap-plugin-push
+  195  ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=71672070481
+  196  npm uninstall --save @ionic-native/push
+  197  ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID=71672070481
+  198  npm install --save @ionic-native/push
+  199  ionic cordova run android
+  200  ionic cordova run ios
+  201  cordova platform rm ios
+  202  cordova platform add ios
+  203  cordova platform rm ios
+  204  cordova plugin rm phonegap-plugin-push
+  205  cordova plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID="71672070481"
+  206  cordova platform rm android
+  207  cordova plugin add https://github.com/phonegap/phonegap-plugin-push --variable SENDER_ID="71672070481"
+  208  cordova platform add android
+  209  cordova platform rm android
+  210  ionic cordova plugin add phonegap-plugin-push --variable SENDER_ID="71672070481"
+  211  cordova platform add android
+  212  cordova platform add android@7.1.0
+  213  cordova platform rm android
+  214  cordova platform add android@7.1.0
+  215  cordova platform rm ios
+  216  cordova platform add ios
+  217  cd platforms/ios
+  218  cordova platform rm ios --save
+  219  cd ..
+  220  cd ..
+  221  cordova platform rm ios --save
+  222  cordova platform add ios --save
+  223  cd platforms/ios
+  224  pod install
+  225  pod repo update
+  226  sudo gem install cocoapods
+  227  pod install
+  228  cd ..
+  229  cd ..
+  230  ionic cordova run ios
+  231  ionic cordova run ios
+  232  ionic cordova run ios
+  233  ionic serve -c
+  234  ionic cordova run ios
+  235  ionic serve -c
+  236  ionic cordova run ios
+  237  ionic cordova run ios
+  238  cordova plugin save
+  239  cordova platform rm ios
+  240  cordova platform add ios
+  241  cordova platform rm android
+  242  cordova platform add android
+  243  cordova platform rm android
+  244  cordova platform add android@7.1.0
+  245  ionic cordova run ios
+  246  ionic serve -c
+  247  ionic cordova run ios
+  248  sudo gem install cocoapods
+  249  pod install
+  250  cd platforms/ios
+  251  sudo gem install cocoapods
+  252  pod install
+  253  cd ..
+  254  cd ..
+  255  ionic cordova run ios
+  256  git add .
+  257  git commit -m "ios Push Notification"
+  258  git push
+  259  ionic cordova run ios
+  260  ionic serve -c
+  261  ionic serve -c
+  262  ionic serve -c
+  263  ionic serve -c
+  264  ionic serve -c
+  265  ionic serve -c
+  266  ionic serve -c
+  267  ionic serve -c
+  268  ionic serve -c
+  269  ionic serve -c
+  270  ionic serve -c
+  271  cd ..
+  272  cd ..
+  273  mkdri coursera
+  274  mkdir coursera
+  275  mkdir angular
+  276  cd angular/
+  277  git clone https://gopinathnelluri@bitbucket.org/gopinathnelluri/git-test.git
+  278  ls
+  279  cd git-test/
+  280  ls
+  281  npm init
+  282  ls
+  283  npm install lite-server --save-dev
+  284  open .
+  285  ng -v
+  286  cd ..
+  287  ng new conFusion --style=scss
+  288  cd conFusion/
+  289  ls
+  290  cd ..
+  291  open .
+  292  cd conFusion/
+  293  git status
+  294  npm install @angular/material@2.0.0-beta.8 --save
+  295  npm install @angular/cdk@2.0.0-beta.8 --save
+  296  npm install @angular/animations --save
+  297  npm install hammerjs --save
+  298  npm install --save @angular/flex-layout
+  299  npm start
+  300  npm install @angular/cdk --save
+  301  npm install @angular/material --save
+  302  rm -rf node_modules
+  303  npm install
+  304  npm start
+  305  cd src/
+  306  ls
+  307  cd app/
+  308  mkdir core
+  309  cd core
+  310  ng generate module material
+  311  cd ..
+  312  cd ..
+  313  cd ..
+  314  npm start
+  315  git add .
+  316  git commit -m "angular configuration"
+  317  ng generate component menu
+  318  npm start
+  319  git add .
+  320  git commit -m "component part 1"
+  321  git add .
+  322  npm start
+  323  git add .
+  324  git commit -m "components part 2"
+  325  npm start
+  326  cd ..
+  327  cd ..
+  328  cd ionic/
+  329  ls
+  330  open .
+  331  clear
+  332  cd app
+  333  git add .
+  334  git commit -m "before ios build"
+  335  git push
+  336  ionic cordova build android --prod
+  337  ionic cordova run android --device
+  338  ionic cordova run android
+  339  cd ionic
+  340  cd app
+  341  ionic cordova run android
+  342  sudo add-apt-repository ppa:cwchien/gradle
+  343  sudo add-apt-repository ppa:cwchien/gradle
+  344  sudo add-apt repository ppa:cwchien/gradle
+  345  sudo add apt repository ppa:cwchien/gradle
+  346  sudo add apt-repository ppa:cwchien/gradle
+  347  java -version
+  348  sudo port install gradle
+  349  brew install gradle
+  350  ionic cordova run android
+  351  ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
+  352  ~/Library/Android/sdk/tools/bin/sdkmanager
+  353  ~/Library/Android/sdk/tools/bin/sdkmanager
+  354  ionic cordova run android
+  355  ionic cordova run android
+  356  ionic run android --list
+  357  ionic cordova run android --list
+  358  ionic cordova run android --list
+  359  ionic cordova run android --target=IONIC
+  360  ~/Library/Android/sdk/tools/bin/sdkmanager --licenses
+  361  ionic cordova run android --list
+  362  ionic cordova build android --prod
+  363  ionic cordova run android
+  364  brew update gradle
+  365  brew search gradle
+  366  brew info gradle
+  367  brew switch gradle 4.7
+  368  ionic cordova run android
+  369  sdk list gradle
+  370  ionic cordova run android
+  371  ionic cordova run android
+  372  brew install gradle
+  373  ionic cordova platform remove android
+  374  ionic cordova platform add android
+  375  ionic cordova run android
+  376  ionic cordova platform remove android
+  377  ionic cordova platform add android
+  378  ionic cordova run android
+  379  cd /Library/Android/sdk/
+  380  cd ~/Library/Android/sdk/
+  381  ls
+  382  tools/android
+  383  tools/bin/sdkmanager
+  384  touch ~/.android/repositories.cfg
+  385  tools/bin/sdkmanager
+  386  tools/android list target
+  387  tools/android list device
+  388  touch ~/.bash_profile
+  389  vi ~/.bash_profile
+  390  android
+  391  tools/android update sdk
+  392  tools/bin/sdkmanager update sdk
+  393  cd ..
+  394  cd ..
+  395  cd ..
+  396  cd ionic/app/
+  397  ionic cordova run android --target=Nexus_5X_API_23_2
+  398  ionic cordova run android --target=Nexus_5X_API_23_2
+  399  ionic cordova plugin add cordova-plugin-fcm
+  400  ionic cordova plugin add cordova-plugin-fcm
+  401  ionic cordova plugin remove cordova-plugin-fcm
+  402  ionic cordova plugin add cordova-plugin-fcm
+  403  ionic cordova plugin remove cordova-plugin-fcm
+  404  ionic cordova plugin add cordova-plugin-fcm
+  405  npm install --save @ionic-native/fcm
+  406  ionic cordova run android --target=Nexus_5X_API_23_2
+  407  ionic cordova run android --target=Nexus_5X_API_23_2
+  408  ionic serve -c
+  409  ionic serve -c
+  410  ionic cordova run android --target=Nexus_5X_API_23_2
+  411  ionic cordova run android --target=Nexus_5X_API_23_2
+  412  ionic cordova run android --target=Nexus_5X_API_23_2
+  413  ionic cordova run android --target=Nexus_5X_API_23_2
+  414  ionic cordova run android --target=Nexus_5X_API_23_2
+  415  ionic cordova plugin remove cordova-plugin-fcm
+  416  ionic cordova plugin remove cordova-plugin-fcm-plus
+  417  ionic cordova plugin add cordova-plugin-fcm-plus
+  418  ionic cordova plugin add cordova-plugin-fcm
+  419  ionic cordova platform remove android
+  420  ionic cordova platform remove android@6.4.0
+  421  ionic cordova platform add android@6.4.0
+  422  ionic cordova run android --target=Nexus_5X_API_23_2
+  423  ionic cordova run android --target=Nexus_5X_API_23_2
+  424  ionic cordova platform remove android
+  425  ionic cordova platform add android@6.3.0
+  426  ionic cordova plugin remove cordova-plugin-fcm
+  427  ionic cordova plugin add cordova-plugin-fcm
+  428  ionic cordova run android --target=Nexus_5X_API_23_2
+  429  ionic cordova platform remove android@6.3.0
+  430  ionic cordova platform add android
+  431  ionic cordova platform remove android
+  432  ionic cordova platform add android
+  433  ionic cordova run android --target=Nexus_5X_API_23_2
+  434  ionic cordova plugin remove cordova-plugin-fcm
+  435  npm uninstall --save @ionic-native/fcm
+  436  ionic cordova run android --target=Nexus_5X_API_23_2
+  437  ionic cordova run android --target=Nexus_5X_API_23_2
+  438  ionic serve -c
+  439  ionic serve -c
+  440  ionic cordova platform remove android
+  441  ionic cordova platform remove ios
+  442  ionic cordova platform add ios@4.5.4
+  443  ionic cordova platform add android
+  444  ionic cordova platform remove android
+  445  ionic cordova platform add android@7.1.0
+  446  ionic serve -c
+  447  cd platforms/ios
+  448  pod install
+  449  pod repo update
+  450  sudo gem install cocoapods
+  451  pod install
+  452  ionic serve -c
+  453  cd ..
+  454  cd ..
+  455  ionic serve -c
+  456  ionic cordova build ios --prod
+  457  cordova platform rm android
+  458  cordova platform add android@7.1.0
+  459  ionic cordova run android --prod
+  460  ionic cordova run android --target=Nexus_5X_API_23_2
+  461  cd ionic/app/
+  462  ionic cordova run android --target=Nexus_5X_API_23_2
+  463  ionic cordova run android --target=Nexus_5X_API_23_2
+  464  ionic cordova run android --target=Nexus_5X_API_23_2
+  465  cordova platform rm ios
+  466  cordova platform add ios@4.4.0
+  467  ionic cordova plugin add cordova-plugin-fcm
+  468  ionic cordova plugin remove phonegap-plugin-push
+  469  ionic cordova plugin add phonegap-plugin-push@1.10.5 --variable SENDER_ID=71672070481
+  470  cordova platform rm ios@4.4.0
+  471  ionic cordova plugin add phonegap-plugin-push@1.10.5 --variable SENDER_ID=71672070481
+  472  cordova platform add ios@4.5.0
+  473  cordova platform rm ios@4.4.0
+  474  cordova platform rm ios
+  475  cordova platform add ios@4.5.0
+  476  gem install cocoapods
+  477  sudo gem install cocoapods
+  478  cd platforms/ios/
+  479  pod install
+  480  cd ..
+  481  cd ..
+  482  ionic cordova platform remove android
+  483  ionic cordova platform add android@6.2.3
+  484  ionic serve -c
+  485  ionic cordova platform rm android
+  486  ionic cordova platform rm ios
+  487  ionic cordova plugin rm phonegap-plugin-push
+  488  npm uninstall --save @ionic-native/push
+  489  ionic cordova plugin add phonegap-plugin-push
+  490  npm install --save @ionic-native/push
+  491  ionic serve -c
+  492  ionic serve -c
+  493  ionic serve -c
+  494  ionic cordova run ios --device
+  495  sudo gem install cocoapods
+  496  cd platforms/ios
+  497  pod install
+  498  cd ..
+  499  cd ..
+  500  ionic cordova build ios --prod
+  501  cd ionic/app
+  502  ionic cordova platform add android
+  503  cd ionic
+  504  cd ..
+  505  open .
+  506  cd app
+  507  ionic serve -c
+  508  ionic serve -c
+  509  ionic serve -c
+  510  clear
+  511  ionic serve -c
+  512  ionic serve -c
+  513  ionic serve -c
+  514  ionic serve -c
+  515  open .
+  516  cd platforms/android/app/build
+  517  open .
+  518  cd ..
+  519  ls
+  520  cd ..
+  521  cd .
+  522  cd ..
+  523  cd ..
+  524  ls
+  525  keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-alias
+  526  keytool -genkey -v -keystore my-release-key.jks -keyalg RSA -keysize 2048 -validity 10000 -alias my-alias
+  527  jarsigner
+  528  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks ./platforms/android/app/build/outputs/apk/release/android-release-unsigned.apk my-alias
+  529  git add .
+  530  git status
+  531  git commit -m "contact"
+  532  git push
+  533  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks android-release-unsigned.apk my-alias
+  534  jarsigner -verbose -sigalg SHA1withRSA -digestalg SHA1 -keystore my-release-key.jks ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk my-alias
+  535  ~/Library/Android/sdk/build-tools/VERSION/zipalign
+  536  ~/Library/Android/sdk/build-tools/23.0.3/zipalign -v 4 ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./platforms/android/app/build/outputs/apk/release/tournaments.apk
+  537  ~/Library/Android/sdk/build-tools/23.0.3/apksigner verify ./platforms/android/app/build/outputs/apk/release/tournaments.apk
+  538  ~/Library/Android/sdk/build-tools/26.0.2/zipalign -v 4 ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./platforms/android/app/build/outputs/apk/release/tournaments.apk
+  539  ~/Library/Android/sdk/build-tools/26.0.2/zipalign -v 4 ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./platforms/android/app/build/outputs/apk/release/Tournaments.apk
+  540  ~/Library/Android/sdk/build-tools/26.0.2/zipalign -v 4 ./platforms/android/app/build/outputs/apk/release/app-release-unsigned.apk ./platforms/android/app/build/outputs/apk/release/26.0.2/Tournaments.apk
+  541  history
+  542  git add .
+  543  git commit -m "build"
+  544  echo history > hist.txt
+  545  history > hist.txt
