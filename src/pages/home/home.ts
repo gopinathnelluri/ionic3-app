@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
 import { FirebaseService } from "../../providers/firebase-service";
 import { Observable } from 'rxjs/Observable';
-import { SportPage } from "../sport/sport";
+import { SchedulePage } from "../schedule/schedule";
 import { icons } from '../../providers/icons';
 import { categories } from '../../providers/categories';
 
@@ -55,7 +55,7 @@ export class HomePage {
   }
 
   navigateToSport(event,item,gender,category){
-    this.navCtrl.push(SportPage,{
+    this.navCtrl.push(SchedulePage,{
       "category": category,
       "sportItem" : item,
       "gender": gender

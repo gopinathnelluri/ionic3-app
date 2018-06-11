@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="us.gopinath.tournament" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="us.gopinath.tournament" version="1.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Tournament</name>
     <description>An awesome Tournament app.</description>
     <author email="contact@gopinath.us" href="http://gopinath.us">Gopinath Nelluri</author>

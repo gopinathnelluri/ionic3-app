@@ -4,6 +4,7 @@ import { FirebaseService } from "../../providers/firebase-service";
 import { LocationPage } from "../location/location";
 import { categories } from '../../providers/categories';
 import { Calendar } from '@ionic-native/calendar';
+import { DetailsPage } from '../details/details';
 
 /**
  * Generated class for the SportPage page.
@@ -14,17 +15,17 @@ import { Calendar } from '@ionic-native/calendar';
 
 @IonicPage()
 @Component({
-  selector: 'page-sport',
-  templateUrl: 'sport.html',
+  selector: 'page-schedule',
+  templateUrl: 'schedule.html',
   providers: [Calendar]
 })
-export class SportPage {
+export class SchedulePage {
   category: any;
   categoryDetails: any;
   sport: any;
   gender: any;
-  sportData: any;
-  sportObject: any;
+  scheduleData: any;
+  scheduleObject: any;
   showBreadCrumb: any;
   calenderTitle: any = "";
   
@@ -35,32 +36,40 @@ export class SportPage {
     this.categoryDetails = categories[this.category];
     console.log(this.categoryDetails)
 
-    this.sportObject = this.firebaseService.get(this.gender+ '/sports/'+this.sport.path+"/"+this.category).valueChanges();
+    this.scheduleObject = this.firebaseService.get(this.gender+ '/sports/'+this.sport.path+"/"+this.category+"/schedule").valueChanges();
     
-    this.sportObject.subscribe((data) => {
-      console.log("cat:",data)
-      if(data && data[0]){
-        this.sportData = data[0];
+    this.scheduleObject.subscribe((data) => {
+      console.log("schedule:",data)
+      if(data){
+        this.scheduleData = data;
         this.calenderTitle = (this.gender=='male'?'Men':'Women')+"'s "+this.sport.name+" : " +this.categoryDetails.title;
       }
     })
   }
 
+  details(event, i ){
+    this.navCtrl.push(DetailsPage,{
+      "sport" : this.sport,
+      "category": this.category,
+      "gender": this.gender,
+      "index": i
+    });
+  }
+
   ionViewDidLoad() {
-    
     console.log('ionViewDidLoad SportPage');
   }
 
   dateClicked(event,i){
-    var destination = this.sportData.schedule[i].location.address+", "+this.sportData.schedule[i].location.city+", "+this.sportData.schedule[i].location.state+" "+this.sportData.schedule[i].location.zip;
+    var destination = this.scheduleData.schedule[i].location.address+", "+this.scheduleData.schedule[i].location.city+", "+this.scheduleData.schedule[i].location.state+" "+this.scheduleData.schedule[i].location.zip;
       
     this.calendar.hasReadWritePermission().then((data) => {
       if(data){
-        this.calendar.createEventInteractively( this.calenderTitle, destination, "Added by so and so app (example note)", new Date(this.sportData.schedule[i].date), null);
+        this.calendar.createEventInteractively( this.calenderTitle, destination, "Added by so and so app (example note)", new Date(this.scheduleData.schedule[i].date), null);
       } else {
         this.calendar.requestReadWritePermission().then((data) => {
             if(data){
-              this.calendar.createEventInteractively( this.calenderTitle, destination, "Added by so and so app (example note)", new Date(this.sportData.schedule[i].date), null);
+              this.calendar.createEventInteractively( this.calenderTitle, destination, "Added by so and so app (example note)", new Date(this.scheduleData.schedule[i].date), null);
             }
         })
       }
@@ -70,7 +79,7 @@ export class SportPage {
   addressClicked(event,i){
       this.navCtrl.push(LocationPage,{
         "sportItem" : this.sport,
-        "location":  this.sportData.schedule[i].location
+        "location":  this.scheduleData.schedule[i].location
       });
   }
 

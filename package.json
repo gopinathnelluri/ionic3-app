@@ -1,6 +1,6 @@
 {
-  "name": "Tournament",
-  "version": "1.0.0",
+  "name": "Tournaments",
+  "version": "1.0.1",
   "author": "Gopinath Nelluri",
   "homepage": "http://gopinath.us",
   "private": true,
@@ -53,6 +53,7 @@
     "phonegap-plugin-push": "^2.2.3",
     "protobufjs": "^6.8.6",
     "randomatic": "^3.0.0",
+    "run": "1.4.0",
     "rxjs": "5.5.8",
     "sw-toolbox": "3.6.0",
     "tunnel-agent": "^0.6.0",
