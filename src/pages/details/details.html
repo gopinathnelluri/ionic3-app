@@ -17,7 +17,7 @@
     
     <div *ngIf="details">
         <ion-card>
-            <ion-card-header color="primary">
+            <ion-card-header text-center color="primary">
                 {{details.isLive?'Live Score':'Score'}}
             </ion-card-header>
             
@@ -53,6 +53,51 @@
               </ion-list>
             
         </ion-card>
+        <ion-card >
+                <ion-list no-border>  
+                  <ion-item>
+                    <h2>Home Team</h2>
+                    <ion-note item-end>
+                        <h2>{{details.teams.home}}</h2>
+                    </ion-note>
+                  </ion-item>
+                  <ion-item>
+                    <h2>Guest Team</h2>
+                    <ion-note item-end>
+                        <h2>{{details.teams.guest}}</h2>
+                    </ion-note>
+                  </ion-item>
+                  <ion-item>
+                    <h2>Level</h2>
+                    <ion-note item-end>
+                        <h2>{{details.level}}</h2>
+                    </ion-note>
+                  </ion-item>
+                  <ion-item>
+                    <h2>Status</h2>
+                    <ion-note item-end>
+                        <h2>{{details.status}}</h2>
+                    </ion-note>
+                  </ion-item>
+                </ion-list>  
+                
+                <ion-list no-border>  
+                  <ion-item (click)="dateClicked($event,i)">
+                        <ion-icon name="time" item-start large></ion-icon>
+                        <h3>{{details.date | date:'fullDate'}}</h3>
+                        <p>{{details.time}}</p>
+                  </ion-item>
+                </ion-list>
+                <ion-list no-border>  
+                  <ion-item (click)="addressClicked($event,i)">
+                      <ion-icon name="navigate" item-left large ></ion-icon>
+                      <h3>{{details.location.address}}</h3>
+                      <p>{{details.location.city}}, {{details.location.state}} {{details.location.zip}}</p>
+                  </ion-item>
+                </ion-list>  
+                
+              </ion-card>
+            
     </div>
     
 </ion-content>
