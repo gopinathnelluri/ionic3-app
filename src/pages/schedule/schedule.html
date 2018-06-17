@@ -48,7 +48,7 @@
     </div>
     -->
     <div >   
-        <ion-card >
+        <ion-card no-padding >
             <ion-card-header color="primary" text-uppercase>
               Schedule
             </ion-card-header>
@@ -70,6 +70,37 @@
                             </ion-note>
                           </ion-item>
                           <ion-item>
+                              <ion-grid class="scheduleDetails">
+                                  <ion-row>
+                                    <ion-col no-padding text-left>
+                                      <ion-row>
+                                          <ion-col>
+                                              {{scheduleItem.details.level}}
+                                          </ion-col>
+                                      </ion-row>
+                                      <ion-row>
+                                          <ion-col>
+                                              {{scheduleItem.details.status}}
+                                          </ion-col>
+                                      </ion-row>
+                                    </ion-col>
+                                    <ion-col no-padding text-right>
+                                        <ion-row *ngIf="scheduleItem.details.date">
+                                            <ion-col>
+                                              {{scheduleItem.details.date}}
+                                            </ion-col>
+                                        </ion-row>
+                                        <ion-row>
+                                            <ion-col>
+                                              {{scheduleItem.details.time}}
+                                            </ion-col>
+                                        </ion-row>
+                                      </ion-col>
+                                  </ion-row>
+                              </ion-grid>
+                          </ion-item>
+                          <!--
+                          <ion-item>
                             <h2>Level</h2>
                             <ion-note item-end>
                                 <h2>{{scheduleItem.details.level}}</h2>
@@ -81,7 +112,9 @@
                                 <h2>{{scheduleItem.details.status}}</h2>
                             </ion-note>
                           </ion-item>
+                          -->
                         </ion-list>  
+                        
                         <!--
                         <ion-list no-border>  
                           <ion-item (click)="dateClicked($event,i)">
